@@ -45,8 +45,8 @@ const Logotipo = () => {
           width={200}
           height={200}
           alt="Logotipo"
-          priority
-        />
+        
+          />
         <h1 id="bien">Bienvenido</h1>
         <div className="burbujas">
           <div className="burbuja"></div>
