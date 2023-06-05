@@ -1,0 +1,220 @@
+body {
+  background: linear-gradient(var(--colorf2), var(--colorf1));
+  background-size: 100%;
+  font-family: "Kanit", sans-serif;
+}
+:root {
+  /* fondo */
+  --colorf1: rgb(166, 190, 255);
+  --colorf2: rgb(128, 255, 185);
+  --colorheader: rgba(255, 255, 255, 0.37);
+  --negro: rgb(0, 0, 0);
+  --blanco: rgb(255, 255, 255);
+  --blanco2: rgba(255, 255, 255, 0.171);
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+header {
+  background: var(--colorheader);
+  padding: 1px;
+  display: flex;
+  justify-content: center;
+}
+
+header img {
+  height: 200px;
+  margin: 5px;
+  display: inline-block;
+}
+
+header h1 {
+  display: inline-block;
+  font-size: 80px;
+}
+
+.burbuja {
+  border-radius: 50%;
+  background: radial-gradient(var(--blanco2), var(--blanco));
+  opacity: 0.3;
+
+  position: absolute;
+  bottom: -150;
+
+  animation: burbujas 3s linear infinite;
+}
+
+.burbuja:nth-child(1) {
+  width: 80px;
+  height: 80px;
+  left: 5%;
+  animation-duration: 3s;
+  animation-delay: 3s;
+}
+
+.burbuja:nth-child(2) {
+  width: 100px;
+  height: 100px;
+  left: 35%;
+  animation-duration: 3s;
+  animation-delay: 5s;
+}
+
+.burbuja:nth-child(3) {
+  width: 20px;
+  height: 20px;
+  left: 15%;
+  animation-duration: 1.5s;
+  animation-delay: 7s;
+}
+
+.burbuja:nth-child(4) {
+  width: 50px;
+  height: 50px;
+  left: 90%;
+  animation-duration: 6s;
+  animation-delay: 3s;
+}
+
+.burbuja:nth-child(5) {
+  width: 70px;
+  height: 70px;
+  left: 65%;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+.burbuja:nth-child(6) {
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  animation-duration: 4s;
+  animation-delay: 5s;
+}
+
+.burbuja:nth-child(7) {
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  animation-duration: 4s;
+  animation-delay: 5s;
+}
+
+.burbuja:nth-child(8) {
+  width: 100;
+  height: 100px;
+  left: 52%;
+  animation-duration: 5s;
+  animation-delay: 5s;
+}
+
+.burbuja:nth-child(9) {
+  width: 65px;
+  height: 65px;
+  left: 51%;
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+
+.burbuja:nth-child(10) {
+  width: 40px;
+  height: 40px;
+  left: 35%;
+  animation-duration: 3s;
+  animation-delay: 4s;
+}
+
+@keyframes burbujas {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+  30% {
+    transform: translateX(30px);
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    bottom: 100vh;
+    opacity: 0;
+  }
+}
+
+.login {
+  width: 320px;
+  height: 520px;
+  background: var(--colorheader);
+  color: var(--negro);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -32%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+
+.login h1 {
+  color: #1a78e4;
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.login label {
+  color: hsl(209, 65%, 52%);
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+.login input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+  border: none;
+  border-bottom: 1px solid var(--negro);
+  background: transparent;
+  outline: none;
+  height: 40px;
+  font-size: 17px;
+}
+
+
+#miImagen {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top: -30px;
+  left: calc(50% - 87px);
+}
+
+#miImagen2 {
+  width: 180px;
+  height: 180px;
+}
+
+#bien {
+  color: hsl(209, 65%, 52%);
+}
+
+.login button {
+  background: linear-gradient(var(--colorf2), var(--colorf1));
+  background-size: 100%;
+  font-family: "Kanit", sans-serif;
+  color: hsl(209, 65%, 52%);
+  padding: 10px 90px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 400px;
+  border: 3px solid hsl(209, 65%, 52%);
+}
